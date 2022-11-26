@@ -1,8 +1,9 @@
+import './TransactionHistory.modyle.css';
 import PropTypes from 'prop-types';
 export default function TransactionHistory(props) {
   return (
     <table className="transaction-history">
-      <thead>
+      <thead className="table">
         <tr>
           <th>Type</th>
           <th>Amount</th>
