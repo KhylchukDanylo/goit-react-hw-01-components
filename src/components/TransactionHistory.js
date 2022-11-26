@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 export default function TransactionHistory(props) {
-  console.log(props.items);
   return (
     <table className="transaction-history">
       <thead>
@@ -22,3 +22,7 @@ export default function TransactionHistory(props) {
     </table>
   );
 }
+
+TransactionHistory.propTypes = {
+  props: PropTypes.object,
+};

@@ -1,4 +1,4 @@
-import PropTypes, { element } from 'prop-types';
+import PropTypes from 'prop-types';
 export default function Statistics({ title, stats }) {
   let isTitle = false;
   if (title !== '') {

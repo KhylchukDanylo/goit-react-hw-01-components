@@ -23,14 +23,16 @@ export default function App() {
       ))}
 
       <Statistics key="Statistics" title="Upload stats" stats={data} />
-      {frends.map(el => (
-        <FrendList
-          key={el.id}
-          avatar={el.avatar}
-          name={el.name}
-          isOnline={el.isOnline}
-        />
-      ))}
+      <ul key="FrendList" className="friend-list">
+        {frends.map(el => (
+          <FrendList
+            key={el.id}
+            avatar={el.avatar}
+            name={el.name}
+            isOnline={el.isOnline}
+          />
+        ))}
+      </ul>
 
       <TransactionHistory key="TransactionHistory" items={transactions} />
     </div>
